@@ -7,18 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B253F8FB1E86089400EF58E7 /* MeltwaterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B253F8F11E86089400EF58E7 /* MeltwaterKit.framework */; };
-		B253F9001E86089400EF58E7 /* MeltwaterKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F8FF1E86089400EF58E7 /* MeltwaterKitTests.swift */; };
+		0F0DC9E90B2DC1FE3E642F33 /* Pods_MeltwaterKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35146BF4EB56421D2D76729A /* Pods_MeltwaterKitTests.framework */; };
+		3D8E0E897FA1C367C92C27E2 /* Pods_MeltwaterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E7B35994DFE4C125D0FD49 /* Pods_MeltwaterKit.framework */; };
+		7F7D9CB3EC1AC4929E412B69 /* Pods_MeltwaterKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A85D2898CC2694C94C4B181 /* Pods_MeltwaterKitDemo.framework */; };
 		B253F9021E86089400EF58E7 /* MeltwaterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B253F8F41E86089400EF58E7 /* MeltwaterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B253F9101E860A9500EF58E7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F90F1E860A9500EF58E7 /* Storyboard.storyboard */; };
-		B253F9121E860AE400EF58E7 /* MWMagicLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9111E860AE400EF58E7 /* MWMagicLoginViewController.swift */; };
-		B253F91A1E860BA500EF58E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9191E860BA500EF58E7 /* AppDelegate.swift */; };
-		B253F91C1E860BA500EF58E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F91B1E860BA500EF58E7 /* ViewController.swift */; };
-		B253F91F1E860BA500EF58E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F91D1E860BA500EF58E7 /* Main.storyboard */; };
-		B253F9221E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B253F9201E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodeld */; };
-		B253F9241E860BA500EF58E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F9231E860BA500EF58E7 /* Assets.xcassets */; };
-		B253F9271E860BA500EF58E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F9251E860BA500EF58E7 /* LaunchScreen.storyboard */; };
-		B253F9321E860BA500EF58E7 /* MeltwaterKitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9311E860BA500EF58E7 /* MeltwaterKitTestTests.swift */; };
+		B253F9101E860A9500EF58E7 /* MeltwaterKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F90F1E860A9500EF58E7 /* MeltwaterKit.storyboard */; };
 		B253F94F1E860BE400EF58E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F94E1E860BE400EF58E7 /* AppDelegate.swift */; };
 		B253F9511E860BE400EF58E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9501E860BE400EF58E7 /* ViewController.swift */; };
 		B253F9541E860BE400EF58E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F9521E860BE400EF58E7 /* Main.storyboard */; };
@@ -26,23 +19,39 @@
 		B253F9591E860BE400EF58E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F9581E860BE400EF58E7 /* Assets.xcassets */; };
 		B253F95C1E860BE400EF58E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F95A1E860BE400EF58E7 /* LaunchScreen.storyboard */; };
 		B253F9721E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9711E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift */; };
+		B253F97E1E86341D00EF58E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F97D1E86341D00EF58E7 /* Assets.xcassets */; };
+		B2E1EECF1E8EA4CE0010E32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F97D1E86341D00EF58E7 /* Assets.xcassets */; };
+		B2E1EED41E90637A0010E32C /* MWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */; };
+		B2E1EEDF1E90A9FC0010E32C /* FHAIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */; };
+		B2E1EEF91E90B2D30010E32C /* MeltwaterKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EEF81E90B2D30010E32C /* MeltwaterKitTests.swift */; };
+		B2E1EEFB1E90B2D30010E32C /* MeltwaterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B253F8F11E86089400EF58E7 /* MeltwaterKit.framework */; };
+		B2E1EF021E90B30F0010E32C /* FHAIDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF011E90B30F0010E32C /* FHAIDataModelTests.swift */; };
+		B2E1EF061E90B8CA0010E32C /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF051E90B8CA0010E32C /* RestClient.swift */; };
+		B2E1EF0A1E90D9090010E32C /* FHAIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF091E90D9090010E32C /* FHAIInteractor.swift */; };
+		B2E1EF0D1E90DC730010E32C /* FHAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */; };
+		B2E1EF101E90E34C0010E32C /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF051E90B8CA0010E32C /* RestClient.swift */; };
+		B2E1EF131E90E3EF0010E32C /* FHAIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF121E90E3EF0010E32C /* FHAIDataManager.swift */; };
+		B2E1EF141E90E4190010E32C /* FHAIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF121E90E3EF0010E32C /* FHAIDataManager.swift */; };
+		B2E1EF151E90E4500010E32C /* FHAIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */; };
+		B2E1EF161E90E4600010E32C /* FHAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */; };
+		B2E1EF191E9132F00010E32C /* FHAIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF181E9132F00010E32C /* FHAIPresenter.swift */; };
+		B2E1EF1C1E9134400010E32C /* FHAIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1B1E9134400010E32C /* FHAIRouter.swift */; };
+		B2E1EF1E1E9138470010E32C /* FHAIDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1D1E9138470010E32C /* FHAIDocumentsViewController.swift */; };
+		B2E1EF201E913C550010E32C /* FHAIDocumentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1F1E913C550010E32C /* FHAIDocumentsTableViewCell.swift */; };
+		B2E1EF211E9160D80010E32C /* FHAIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1B1E9134400010E32C /* FHAIRouter.swift */; };
+		B2E1EF221E9160FC0010E32C /* MWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */; };
+		B2E1EF231E9160FE0010E32C /* FHAIDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1D1E9138470010E32C /* FHAIDocumentsViewController.swift */; };
+		B2E1EF241E9161010010E32C /* FHAIDocumentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF1F1E913C550010E32C /* FHAIDocumentsTableViewCell.swift */; };
+		B2E1EF251E91610B0010E32C /* FHAIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF091E90D9090010E32C /* FHAIInteractor.swift */; };
+		B2E1EF261E9161100010E32C /* FHAIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF121E90E3EF0010E32C /* FHAIDataManager.swift */; };
+		B2E1EF271E9161130010E32C /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF051E90B8CA0010E32C /* RestClient.swift */; };
+		B2E1EF281E9161170010E32C /* FHAIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */; };
+		B2E1EF291E91611B0010E32C /* FHAIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF181E9132F00010E32C /* FHAIPresenter.swift */; };
+		B2E1EF2A1E91611F0010E32C /* FHAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */; };
+		B2E1EF2B1E9162950010E32C /* MeltwaterKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F90F1E860A9500EF58E7 /* MeltwaterKit.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B253F8FC1E86089400EF58E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B253F8E81E86089400EF58E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B253F8F01E86089400EF58E7;
-			remoteInfo = MeltwaterKit;
-		};
-		B253F92E1E860BA500EF58E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B253F8E81E86089400EF58E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B253F9161E860BA500EF58E7;
-			remoteInfo = MeltwaterKitTest;
-		};
 		B253F96E1E860BE400EF58E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B253F8E81E86089400EF58E7 /* Project object */;
@@ -50,28 +59,28 @@
 			remoteGlobalIDString = B253F94B1E860BE400EF58E7;
 			remoteInfo = MeltwaterKitDemo;
 		};
+		B2E1EEFC1E90B2D30010E32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B253F8E81E86089400EF58E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B253F8F01E86089400EF58E7;
+			remoteInfo = MeltwaterKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1098F932FF074AE720787AE6 /* Pods-MeltwaterKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitTest/Pods-MeltwaterKitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		35146BF4EB56421D2D76729A /* Pods_MeltwaterKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeltwaterKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CCB751C8390EF53E364F0D /* Pods-MeltwaterKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitDemo/Pods-MeltwaterKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		69E61311E32E7956618151A3 /* Pods_MeltwaterKitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeltwaterKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB88598FAC4ABFF8CC0E7D6 /* Pods-MeltwaterKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKit/Pods-MeltwaterKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9A85D2898CC2694C94C4B181 /* Pods_MeltwaterKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeltwaterKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBF60FE59705A93E0165DB3 /* Pods-MeltwaterKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitTests/Pods-MeltwaterKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6E7B35994DFE4C125D0FD49 /* Pods_MeltwaterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeltwaterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B253F8F11E86089400EF58E7 /* MeltwaterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeltwaterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B253F8F41E86089400EF58E7 /* MeltwaterKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeltwaterKit.h; sourceTree = "<group>"; };
 		B253F8F51E86089400EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B253F8FA1E86089400EF58E7 /* MeltwaterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeltwaterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253F8FF1E86089400EF58E7 /* MeltwaterKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitTests.swift; sourceTree = "<group>"; };
-		B253F9011E86089400EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B253F90F1E860A9500EF58E7 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ui/Storyboard.storyboard; sourceTree = "<group>"; };
-		B253F9111E860AE400EF58E7 /* MWMagicLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWMagicLoginViewController.swift; path = classes/MWMagicLoginViewController.swift; sourceTree = "<group>"; };
-		B253F9171E860BA500EF58E7 /* MeltwaterKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeltwaterKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253F9191E860BA500EF58E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B253F91B1E860BA500EF58E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B253F91E1E860BA500EF58E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B253F9211E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeltwaterKitTest.xcdatamodel; sourceTree = "<group>"; };
-		B253F9231E860BA500EF58E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B253F9261E860BA500EF58E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B253F9281E860BA500EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B253F92D1E860BA500EF58E7 /* MeltwaterKitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeltwaterKitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253F9311E860BA500EF58E7 /* MeltwaterKitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitTestTests.swift; sourceTree = "<group>"; };
-		B253F9331E860BA500EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B253F90F1E860A9500EF58E7 /* MeltwaterKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MeltwaterKit.storyboard; path = ui/MeltwaterKit.storyboard; sourceTree = "<group>"; };
 		B253F93C1E860BA500EF58E7 /* MeltwaterKitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitTestUITests.swift; sourceTree = "<group>"; };
 		B253F93E1E860BA500EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B253F94C1E860BE400EF58E7 /* MeltwaterKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeltwaterKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +94,25 @@
 		B253F96D1E860BE400EF58E7 /* MeltwaterKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeltwaterKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B253F9711E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitDemoUITests.swift; sourceTree = "<group>"; };
 		B253F9731E860BE400EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B253F97D1E86341D00EF58E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoginViewController.swift; path = classes/MWLoginViewController.swift; sourceTree = "<group>"; };
+		B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIProtocols.swift; path = classes/FHAIProtocols.swift; sourceTree = "<group>"; };
+		B2E1EEF61E90B2D30010E32C /* MeltwaterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeltwaterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E1EEF81E90B2D30010E32C /* MeltwaterKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitTests.swift; sourceTree = "<group>"; };
+		B2E1EEFA1E90B2D30010E32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E1EF011E90B30F0010E32C /* FHAIDataModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FHAIDataModelTests.swift; sourceTree = "<group>"; };
+		B2E1EF051E90B8CA0010E32C /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestClient.swift; path = classes/RestClient.swift; sourceTree = "<group>"; };
+		B2E1EF091E90D9090010E32C /* FHAIInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIInteractor.swift; path = classes/FHAIInteractor.swift; sourceTree = "<group>"; };
+		B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIModels.swift; path = classes/FHAIModels.swift; sourceTree = "<group>"; };
+		B2E1EF121E90E3EF0010E32C /* FHAIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIDataManager.swift; path = classes/FHAIDataManager.swift; sourceTree = "<group>"; };
+		B2E1EF181E9132F00010E32C /* FHAIPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIPresenter.swift; path = classes/FHAIPresenter.swift; sourceTree = "<group>"; };
+		B2E1EF1B1E9134400010E32C /* FHAIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIRouter.swift; path = classes/FHAIRouter.swift; sourceTree = "<group>"; };
+		B2E1EF1D1E9138470010E32C /* FHAIDocumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIDocumentsViewController.swift; path = classes/FHAIDocumentsViewController.swift; sourceTree = "<group>"; };
+		B2E1EF1F1E913C550010E32C /* FHAIDocumentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIDocumentsTableViewCell.swift; path = classes/FHAIDocumentsTableViewCell.swift; sourceTree = "<group>"; };
+		B83D7E9945AB2F38C2BD5687 /* Pods-MeltwaterKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitTests/Pods-MeltwaterKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C271F6B223906C559CD59EFF /* Pods-MeltwaterKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitDemo/Pods-MeltwaterKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C786E89A10F7348A321C3074 /* Pods-MeltwaterKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKit/Pods-MeltwaterKit.release.xcconfig"; sourceTree = "<group>"; };
+		C8B166DCEE47E0A6CA436F3C /* Pods-MeltwaterKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeltwaterKitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeltwaterKitTest/Pods-MeltwaterKitTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,28 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F8F71E86089400EF58E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253F8FB1E86089400EF58E7 /* MeltwaterKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F9141E860BA500EF58E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F92A1E860BA500EF58E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3D8E0E897FA1C367C92C27E2 /* Pods_MeltwaterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7D9CB3EC1AC4929E412B69 /* Pods_MeltwaterKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,20 +139,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2E1EEF31E90B2D30010E32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E1EEFB1E90B2D30010E32C /* MeltwaterKit.framework in Frameworks */,
+				0F0DC9E90B2DC1FE3E642F33 /* Pods_MeltwaterKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81B10488F003604487E1CBD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DB88598FAC4ABFF8CC0E7D6 /* Pods-MeltwaterKit.debug.xcconfig */,
+				C786E89A10F7348A321C3074 /* Pods-MeltwaterKit.release.xcconfig */,
+				1098F932FF074AE720787AE6 /* Pods-MeltwaterKitTest.debug.xcconfig */,
+				C8B166DCEE47E0A6CA436F3C /* Pods-MeltwaterKitTest.release.xcconfig */,
+				9DBF60FE59705A93E0165DB3 /* Pods-MeltwaterKitTests.debug.xcconfig */,
+				B83D7E9945AB2F38C2BD5687 /* Pods-MeltwaterKitTests.release.xcconfig */,
+				C271F6B223906C559CD59EFF /* Pods-MeltwaterKitDemo.debug.xcconfig */,
+				36CCB751C8390EF53E364F0D /* Pods-MeltwaterKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B253F8E71E86089400EF58E7 = {
 			isa = PBXGroup;
 			children = (
 				B253F8F31E86089400EF58E7 /* MeltwaterKit */,
-				B253F8FE1E86089400EF58E7 /* MeltwaterKitTests */,
-				B253F9181E860BA500EF58E7 /* MeltwaterKitTest */,
-				B253F9301E860BA500EF58E7 /* MeltwaterKitTestTests */,
+				B2E1EEF71E90B2D30010E32C /* MeltwaterKitTests */,
 				B253F93B1E860BA500EF58E7 /* MeltwaterKitTestUITests */,
 				B253F94D1E860BE400EF58E7 /* MeltwaterKitDemo */,
 				B253F9701E860BE400EF58E7 /* MeltwaterKitDemoUITests */,
 				B253F8F21E86089400EF58E7 /* Products */,
+				81B10488F003604487E1CBD7 /* Pods */,
+				BFBC0DAABD37E8323AB2B51D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,11 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				B253F8F11E86089400EF58E7 /* MeltwaterKit.framework */,
-				B253F8FA1E86089400EF58E7 /* MeltwaterKitTests.xctest */,
-				B253F9171E860BA500EF58E7 /* MeltwaterKitTest.app */,
-				B253F92D1E860BA500EF58E7 /* MeltwaterKitTestTests.xctest */,
 				B253F94C1E860BE400EF58E7 /* MeltwaterKitDemo.app */,
 				B253F96D1E860BE400EF58E7 /* MeltwaterKitDemoUITests.xctest */,
+				B2E1EEF61E90B2D30010E32C /* MeltwaterKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,23 +198,15 @@
 				B253F90B1E86090400EF58E7 /* ui */,
 				B253F8F41E86089400EF58E7 /* MeltwaterKit.h */,
 				B253F8F51E86089400EF58E7 /* Info.plist */,
+				B253F97D1E86341D00EF58E7 /* Assets.xcassets */,
 			);
 			path = MeltwaterKit;
-			sourceTree = "<group>";
-		};
-		B253F8FE1E86089400EF58E7 /* MeltwaterKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				B253F8FF1E86089400EF58E7 /* MeltwaterKitTests.swift */,
-				B253F9011E86089400EF58E7 /* Info.plist */,
-			);
-			path = MeltwaterKitTests;
 			sourceTree = "<group>";
 		};
 		B253F90B1E86090400EF58E7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				B253F90F1E860A9500EF58E7 /* Storyboard.storyboard */,
+				B253F90F1E860A9500EF58E7 /* MeltwaterKit.storyboard */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -192,32 +214,15 @@
 		B253F90C1E86090D00EF58E7 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				B253F9111E860AE400EF58E7 /* MWMagicLoginViewController.swift */,
+				B2E1EF0B1E90DC380010E32C /* Model */,
+				B2E1EF171E9132660010E32C /* Presenter */,
+				B2E1EEDD1E90A9450010E32C /* Protocol */,
+				B2E1EED61E9063B50010E32C /* DataManager */,
+				B2E1EF081E90D8CB0010E32C /* Interactor */,
+				B2E1EF1A1E9134000010E32C /* Router */,
+				B2E1EED51E90639D0010E32C /* View */,
 			);
 			name = classes;
-			sourceTree = "<group>";
-		};
-		B253F9181E860BA500EF58E7 /* MeltwaterKitTest */ = {
-			isa = PBXGroup;
-			children = (
-				B253F9191E860BA500EF58E7 /* AppDelegate.swift */,
-				B253F91B1E860BA500EF58E7 /* ViewController.swift */,
-				B253F91D1E860BA500EF58E7 /* Main.storyboard */,
-				B253F9231E860BA500EF58E7 /* Assets.xcassets */,
-				B253F9251E860BA500EF58E7 /* LaunchScreen.storyboard */,
-				B253F9281E860BA500EF58E7 /* Info.plist */,
-				B253F9201E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodeld */,
-			);
-			path = MeltwaterKitTest;
-			sourceTree = "<group>";
-		};
-		B253F9301E860BA500EF58E7 /* MeltwaterKitTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				B253F9311E860BA500EF58E7 /* MeltwaterKitTestTests.swift */,
-				B253F9331E860BA500EF58E7 /* Info.plist */,
-			);
-			path = MeltwaterKitTestTests;
 			sourceTree = "<group>";
 		};
 		B253F93B1E860BA500EF58E7 /* MeltwaterKitTestUITests */ = {
@@ -252,6 +257,86 @@
 			path = MeltwaterKitDemoUITests;
 			sourceTree = "<group>";
 		};
+		B2E1EED51E90639D0010E32C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */,
+				B2E1EF1D1E9138470010E32C /* FHAIDocumentsViewController.swift */,
+				B2E1EF1F1E913C550010E32C /* FHAIDocumentsTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2E1EED61E9063B50010E32C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EF121E90E3EF0010E32C /* FHAIDataManager.swift */,
+				B2E1EF051E90B8CA0010E32C /* RestClient.swift */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		B2E1EEDD1E90A9450010E32C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		B2E1EEF71E90B2D30010E32C /* MeltwaterKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EEF81E90B2D30010E32C /* MeltwaterKitTests.swift */,
+				B2E1EEFA1E90B2D30010E32C /* Info.plist */,
+				B2E1EF011E90B30F0010E32C /* FHAIDataModelTests.swift */,
+			);
+			path = MeltwaterKitTests;
+			sourceTree = "<group>";
+		};
+		B2E1EF081E90D8CB0010E32C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EF091E90D9090010E32C /* FHAIInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B2E1EF0B1E90DC380010E32C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B2E1EF171E9132660010E32C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EF181E9132F00010E32C /* FHAIPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B2E1EF1A1E9134000010E32C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EF1B1E9134400010E32C /* FHAIRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		BFBC0DAABD37E8323AB2B51D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7B35994DFE4C125D0FD49 /* Pods_MeltwaterKit.framework */,
+				69E61311E32E7956618151A3 /* Pods_MeltwaterKitTest.framework */,
+				35146BF4EB56421D2D76729A /* Pods_MeltwaterKitTests.framework */,
+				9A85D2898CC2694C94C4B181 /* Pods_MeltwaterKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -270,10 +355,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B253F9051E86089400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKit" */;
 			buildPhases = (
+				BFF29E93117C17B273F03F2F /* [CP] Check Pods Manifest.lock */,
 				B253F8EC1E86089400EF58E7 /* Sources */,
 				B253F8ED1E86089400EF58E7 /* Frameworks */,
 				B253F8EE1E86089400EF58E7 /* Headers */,
 				B253F8EF1E86089400EF58E7 /* Resources */,
+				C84772E37BD27529A26E44E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,66 +371,16 @@
 			productReference = B253F8F11E86089400EF58E7 /* MeltwaterKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B253F8F91E86089400EF58E7 /* MeltwaterKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B253F9081E86089400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTests" */;
-			buildPhases = (
-				B253F8F61E86089400EF58E7 /* Sources */,
-				B253F8F71E86089400EF58E7 /* Frameworks */,
-				B253F8F81E86089400EF58E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B253F8FD1E86089400EF58E7 /* PBXTargetDependency */,
-			);
-			name = MeltwaterKitTests;
-			productName = MeltwaterKitTests;
-			productReference = B253F8FA1E86089400EF58E7 /* MeltwaterKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B253F9161E860BA500EF58E7 /* MeltwaterKitTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B253F93F1E860BA500EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTest" */;
-			buildPhases = (
-				B253F9131E860BA500EF58E7 /* Sources */,
-				B253F9141E860BA500EF58E7 /* Frameworks */,
-				B253F9151E860BA500EF58E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MeltwaterKitTest;
-			productName = MeltwaterKitTest;
-			productReference = B253F9171E860BA500EF58E7 /* MeltwaterKitTest.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B253F92C1E860BA500EF58E7 /* MeltwaterKitTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B253F9421E860BA500EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTestTests" */;
-			buildPhases = (
-				B253F9291E860BA500EF58E7 /* Sources */,
-				B253F92A1E860BA500EF58E7 /* Frameworks */,
-				B253F92B1E860BA500EF58E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B253F92F1E860BA500EF58E7 /* PBXTargetDependency */,
-			);
-			name = MeltwaterKitTestTests;
-			productName = MeltwaterKitTestTests;
-			productReference = B253F92D1E860BA500EF58E7 /* MeltwaterKitTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		B253F94B1E860BE400EF58E7 /* MeltwaterKitDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B253F9741E860BE400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitDemo" */;
 			buildPhases = (
+				0AED19EBFF4BE95CC3FF4864 /* [CP] Check Pods Manifest.lock */,
 				B253F9481E860BE400EF58E7 /* Sources */,
 				B253F9491E860BE400EF58E7 /* Frameworks */,
 				B253F94A1E860BE400EF58E7 /* Resources */,
+				B5B10AADEB8309C7656E7A2C /* [CP] Embed Pods Frameworks */,
+				ABBBE9063967CADA2772BB79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +409,27 @@
 			productReference = B253F96D1E860BE400EF58E7 /* MeltwaterKitDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B2E1EEF51E90B2D30010E32C /* MeltwaterKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E1EEFE1E90B2D30010E32C /* Build configuration list for PBXNativeTarget "MeltwaterKitTests" */;
+			buildPhases = (
+				D7F699F93690F79FA795B79A /* [CP] Check Pods Manifest.lock */,
+				B2E1EEF21E90B2D30010E32C /* Sources */,
+				B2E1EEF31E90B2D30010E32C /* Frameworks */,
+				B2E1EEF41E90B2D30010E32C /* Resources */,
+				2CCC7EBFCA3BECFF2C2AADE8 /* [CP] Embed Pods Frameworks */,
+				317FA001970FDE1B0456E313 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E1EEFD1E90B2D30010E32C /* PBXTargetDependency */,
+			);
+			name = MeltwaterKitTests;
+			productName = MeltwaterKitTests;
+			productReference = B2E1EEF61E90B2D30010E32C /* MeltwaterKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -388,22 +446,6 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					B253F8F91E86089400EF58E7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3T7RA73QCK;
-						ProvisioningStyle = Automatic;
-					};
-					B253F9161E860BA500EF58E7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3T7RA73QCK;
-						ProvisioningStyle = Automatic;
-					};
-					B253F92C1E860BA500EF58E7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3T7RA73QCK;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B253F9161E860BA500EF58E7;
-					};
 					B253F94B1E860BE400EF58E7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3T7RA73QCK;
@@ -414,6 +456,11 @@
 						DevelopmentTeam = 3T7RA73QCK;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B253F94B1E860BE400EF58E7;
+					};
+					B2E1EEF51E90B2D30010E32C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3T7RA73QCK;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -431,11 +478,9 @@
 			projectRoot = "";
 			targets = (
 				B253F8F01E86089400EF58E7 /* MeltwaterKit */,
-				B253F8F91E86089400EF58E7 /* MeltwaterKitTests */,
-				B253F9161E860BA500EF58E7 /* MeltwaterKitTest */,
-				B253F92C1E860BA500EF58E7 /* MeltwaterKitTestTests */,
 				B253F94B1E860BE400EF58E7 /* MeltwaterKitDemo */,
 				B253F96C1E860BE400EF58E7 /* MeltwaterKitDemoUITests */,
+				B2E1EEF51E90B2D30010E32C /* MeltwaterKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -445,31 +490,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B253F9101E860A9500EF58E7 /* Storyboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F8F81E86089400EF58E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F9151E860BA500EF58E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253F9271E860BA500EF58E7 /* LaunchScreen.storyboard in Resources */,
-				B253F9241E860BA500EF58E7 /* Assets.xcassets in Resources */,
-				B253F91F1E860BA500EF58E7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F92B1E860BA500EF58E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B253F97E1E86341D00EF58E7 /* Assets.xcassets in Resources */,
+				B253F9101E860A9500EF58E7 /* MeltwaterKit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +501,9 @@
 			files = (
 				B253F95C1E860BE400EF58E7 /* LaunchScreen.storyboard in Resources */,
 				B253F9591E860BE400EF58E7 /* Assets.xcassets in Resources */,
+				B2E1EECF1E8EA4CE0010E32C /* Assets.xcassets in Resources */,
 				B253F9541E860BE400EF58E7 /* Main.storyboard in Resources */,
+				B2E1EF2B1E9162950010E32C /* MeltwaterKit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,40 +514,153 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2E1EEF41E90B2D30010E32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AED19EBFF4BE95CC3FF4864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2CCC7EBFCA3BECFF2C2AADE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeltwaterKitTests/Pods-MeltwaterKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317FA001970FDE1B0456E313 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeltwaterKitTests/Pods-MeltwaterKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABBBE9063967CADA2772BB79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeltwaterKitDemo/Pods-MeltwaterKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B10AADEB8309C7656E7A2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeltwaterKitDemo/Pods-MeltwaterKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF29E93117C17B273F03F2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C84772E37BD27529A26E44E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeltwaterKit/Pods-MeltwaterKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F699F93690F79FA795B79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B253F8EC1E86089400EF58E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B253F9121E860AE400EF58E7 /* MWMagicLoginViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F8F61E86089400EF58E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253F9001E86089400EF58E7 /* MeltwaterKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F9131E860BA500EF58E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253F91C1E860BA500EF58E7 /* ViewController.swift in Sources */,
-				B253F9221E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodeld in Sources */,
-				B253F91A1E860BA500EF58E7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253F9291E860BA500EF58E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253F9321E860BA500EF58E7 /* MeltwaterKitTestTests.swift in Sources */,
+				B2E1EF191E9132F00010E32C /* FHAIPresenter.swift in Sources */,
+				B2E1EF0A1E90D9090010E32C /* FHAIInteractor.swift in Sources */,
+				B2E1EF0D1E90DC730010E32C /* FHAIModels.swift in Sources */,
+				B2E1EF1E1E9138470010E32C /* FHAIDocumentsViewController.swift in Sources */,
+				B2E1EED41E90637A0010E32C /* MWLoginViewController.swift in Sources */,
+				B2E1EF1C1E9134400010E32C /* FHAIRouter.swift in Sources */,
+				B2E1EF201E913C550010E32C /* FHAIDocumentsTableViewCell.swift in Sources */,
+				B2E1EF131E90E3EF0010E32C /* FHAIDataManager.swift in Sources */,
+				B2E1EF061E90B8CA0010E32C /* RestClient.swift in Sources */,
+				B2E1EEDF1E90A9FC0010E32C /* FHAIProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,9 +668,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E1EF211E9160D80010E32C /* FHAIRouter.swift in Sources */,
 				B253F9511E860BE400EF58E7 /* ViewController.swift in Sources */,
+				B2E1EF291E91611B0010E32C /* FHAIPresenter.swift in Sources */,
+				B2E1EF251E91610B0010E32C /* FHAIInteractor.swift in Sources */,
 				B253F94F1E860BE400EF58E7 /* AppDelegate.swift in Sources */,
+				B2E1EF231E9160FE0010E32C /* FHAIDocumentsViewController.swift in Sources */,
+				B2E1EF2A1E91611F0010E32C /* FHAIModels.swift in Sources */,
 				B253F9571E860BE400EF58E7 /* MeltwaterKitDemo.xcdatamodeld in Sources */,
+				B2E1EF261E9161100010E32C /* FHAIDataManager.swift in Sources */,
+				B2E1EF221E9160FC0010E32C /* MWLoginViewController.swift in Sources */,
+				B2E1EF271E9161130010E32C /* RestClient.swift in Sources */,
+				B2E1EF281E9161170010E32C /* FHAIProtocols.swift in Sources */,
+				B2E1EF241E9161010010E32C /* FHAIDocumentsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,43 +692,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2E1EEF21E90B2D30010E32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E1EF151E90E4500010E32C /* FHAIProtocols.swift in Sources */,
+				B2E1EF101E90E34C0010E32C /* RestClient.swift in Sources */,
+				B2E1EF141E90E4190010E32C /* FHAIDataManager.swift in Sources */,
+				B2E1EEF91E90B2D30010E32C /* MeltwaterKitTests.swift in Sources */,
+				B2E1EF021E90B30F0010E32C /* FHAIDataModelTests.swift in Sources */,
+				B2E1EF161E90E4600010E32C /* FHAIModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B253F8FD1E86089400EF58E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B253F8F01E86089400EF58E7 /* MeltwaterKit */;
-			targetProxy = B253F8FC1E86089400EF58E7 /* PBXContainerItemProxy */;
-		};
-		B253F92F1E860BA500EF58E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B253F9161E860BA500EF58E7 /* MeltwaterKitTest */;
-			targetProxy = B253F92E1E860BA500EF58E7 /* PBXContainerItemProxy */;
-		};
 		B253F96F1E860BE400EF58E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B253F94B1E860BE400EF58E7 /* MeltwaterKitDemo */;
 			targetProxy = B253F96E1E860BE400EF58E7 /* PBXContainerItemProxy */;
 		};
+		B2E1EEFD1E90B2D30010E32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B253F8F01E86089400EF58E7 /* MeltwaterKit */;
+			targetProxy = B2E1EEFC1E90B2D30010E32C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B253F91D1E860BA500EF58E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B253F91E1E860BA500EF58E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B253F9251E860BA500EF58E7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B253F9261E860BA500EF58E7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		B253F9521E860BE400EF58E7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -702,6 +841,7 @@
 		};
 		B253F9061E86089400EF58E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB88598FAC4ABFF8CC0E7D6 /* Pods-MeltwaterKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -723,6 +863,7 @@
 		};
 		B253F9071E86089400EF58E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C786E89A10F7348A321C3074 /* Pods-MeltwaterKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -741,90 +882,9 @@
 			};
 			name = Release;
 		};
-		B253F9091E86089400EF58E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B253F90A1E86089400EF58E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B253F9401E860BA500EF58E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B253F9411E860BA500EF58E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B253F9431E860BA500EF58E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeltwaterKitTest.app/MeltwaterKitTest";
-			};
-			name = Debug;
-		};
-		B253F9441E860BA500EF58E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 3T7RA73QCK;
-				INFOPLIST_FILE = MeltwaterKitTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeltwaterKitTest.app/MeltwaterKitTest";
-			};
-			name = Release;
-		};
 		B253F9751E860BE400EF58E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C271F6B223906C559CD59EFF /* Pods-MeltwaterKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7RA73QCK;
@@ -838,6 +898,7 @@
 		};
 		B253F9761E860BE400EF58E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CCB751C8390EF53E364F0D /* Pods-MeltwaterKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7RA73QCK;
@@ -877,6 +938,34 @@
 			};
 			name = Release;
 		};
+		B2E1EEFF1E90B2D30010E32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBF60FE59705A93E0165DB3 /* Pods-MeltwaterKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3T7RA73QCK;
+				INFOPLIST_FILE = MeltwaterKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2E1EF001E90B2D30010E32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83D7E9945AB2F38C2BD5687 /* Pods-MeltwaterKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3T7RA73QCK;
+				INFOPLIST_FILE = MeltwaterKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meltwater.MeltwaterKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -896,30 +985,7 @@
 				B253F9071E86089400EF58E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		B253F9081E86089400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B253F9091E86089400EF58E7 /* Debug */,
-				B253F90A1E86089400EF58E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B253F93F1E860BA500EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B253F9401E860BA500EF58E7 /* Debug */,
-				B253F9411E860BA500EF58E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		B253F9421E860BA500EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B253F9431E860BA500EF58E7 /* Debug */,
-				B253F9441E860BA500EF58E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B253F9741E860BE400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitDemo" */ = {
 			isa = XCConfigurationList;
@@ -928,6 +994,7 @@
 				B253F9761E860BE400EF58E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B253F97A1E860BE400EF58E7 /* Build configuration list for PBXNativeTarget "MeltwaterKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -936,20 +1003,20 @@
 				B253F97C1E860BE400EF58E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E1EEFE1E90B2D30010E32C /* Build configuration list for PBXNativeTarget "MeltwaterKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E1EEFF1E90B2D30010E32C /* Debug */,
+				B2E1EF001E90B2D30010E32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B253F9201E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B253F9211E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodel */,
-			);
-			currentVersion = B253F9211E860BA500EF58E7 /* MeltwaterKitTest.xcdatamodel */;
-			path = MeltwaterKitTest.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		B253F9551E860BE400EF58E7 /* MeltwaterKitDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
