@@ -13,8 +13,8 @@ struct BooleanQuery {
     var query: String = ""
     var type: String = "article"
     var language: String = "en"
-    var startDate: Int = 0
-    var endDate: Int = 0
+    var startDate: Double = 0
+    var endDate: Double = 0
     var country: String = "us"
     var from: Int = 0
     var size: Int = 5
@@ -68,7 +68,7 @@ struct Document {
     var openingText: String = ""
     var url: String = ""
     var reach: Int = 0
-    var indexingTime: Int = 0
+    var indexingTime: Double = 0
     var sentimentDiscrete: String = ""
     var imageUrl: String = ""
     
@@ -81,7 +81,7 @@ struct Document {
             let openingText = json["openingText"] as? String,
             let url = json["url"] as? String,
             let reach = json["reach"] as? Int,
-            let indexingTime = json["indexingTime"] as? Int,
+            let indexingTime = json["indexingTime"] as? Double,
             let imageUrl = json["imageUrl"] as? String,
             let sentimentDiscrete = json["sentimentDiscrete"] as? String
             else { return nil }
