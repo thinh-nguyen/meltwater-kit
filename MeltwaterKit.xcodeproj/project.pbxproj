@@ -214,13 +214,13 @@
 		B253F90C1E86090D00EF58E7 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2E1EF0B1E90DC380010E32C /* Model */,
-				B2E1EF171E9132660010E32C /* Presenter */,
-				B2E1EEDD1E90A9450010E32C /* Protocol */,
-				B2E1EED61E9063B50010E32C /* DataManager */,
-				B2E1EF081E90D8CB0010E32C /* Interactor */,
-				B2E1EF1A1E9134000010E32C /* Router */,
 				B2E1EED51E90639D0010E32C /* View */,
+				B2E1EF081E90D8CB0010E32C /* Interactor */,
+				B2E1EF171E9132660010E32C /* Presenter */,
+				B2E1EF0B1E90DC380010E32C /* Entity */,
+				B2E1EF1A1E9134000010E32C /* Router */,
+				B2E1EED61E9063B50010E32C /* DataManager */,
+				B2E1EEDD1E90A9450010E32C /* Protocol */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -302,12 +302,12 @@
 			name = Interactor;
 			sourceTree = "<group>";
 		};
-		B2E1EF0B1E90DC380010E32C /* Model */ = {
+		B2E1EF0B1E90DC380010E32C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				B2E1EF0C1E90DC730010E32C /* FHAIModels.swift */,
 			);
-			name = Model;
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		B2E1EF171E9132660010E32C /* Presenter */ = {
