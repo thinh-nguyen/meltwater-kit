@@ -9,13 +9,13 @@
 import UIKit
 import PKHUD
 
-class FHAIDocumentsViewController: UIViewController {
+public class FHAIDocumentsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var presenter: FHAIPresenterProtocol?
     var documents: [Document] = []
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -46,7 +46,7 @@ extension FHAIDocumentsViewController: FHAIDocumentsViewProtocol {
 
 extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FHAICell", for: indexPath) as! FHAIDocumentsTableViewCell
         
@@ -56,11 +56,11 @@ extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegat
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return documents.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showDocument(document: documents[indexPath.row])
     }
     

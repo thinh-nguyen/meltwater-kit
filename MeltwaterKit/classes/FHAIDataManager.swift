@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import PromiseKit
 
-class FHAIDataManager: FHAIDataManagerInputProtocol {
+public class FHAIDataManager: FHAIDataManagerInputProtocol {
     
     var documentsHandler:FHAIDataManagerOutputProtocol?
     

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Meltwater. All rights reserved.
 //
 
-class FHAIPresenter: FHAIPresenterProtocol {
+public class FHAIPresenter: FHAIPresenterProtocol {
     
     weak var view: FHAIDocumentsViewProtocol?
     var interactor: FHAIInteractorInputProtocol?

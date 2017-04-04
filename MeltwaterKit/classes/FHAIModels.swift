@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct BooleanQuery {
+public struct BooleanQuery {
     var query: String = ""
     var type: String = "article"
     var language: String = "en"
@@ -23,11 +23,11 @@ struct BooleanQuery {
 
 extension BooleanQuery: Mappable {
     
-    init?(map: Map) {
+    public init?(map: Map) {
         mapping(map: map)
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         query       <- map["query"]
         type        <- map["type"]
         language    <- map["language"]
@@ -42,7 +42,7 @@ extension BooleanQuery: Mappable {
     
 }
 
-struct DocumentsPage {
+public struct DocumentsPage {
     var count: Int = 0
     var documents: [Document] = []
     
@@ -50,17 +50,17 @@ struct DocumentsPage {
 
 extension DocumentsPage: Mappable {
     
-    init?(map: Map) {
+    public init?(map: Map) {
         
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         count    <- map["count"]
         documents <- map["documents"]
     }
 }
 
-struct Document {
+public struct Document {
     var id: String = ""
     var sourceName: String = ""
     var title: String = ""
@@ -103,11 +103,11 @@ struct Document {
 
 extension Document: Mappable {
     
-    init?(map: Map) {
+    public init?(map: Map) {
         
     }
     
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         id                <- map["id"]
         publishDate       <- map["publishDate"]
         title             <- map["title"]

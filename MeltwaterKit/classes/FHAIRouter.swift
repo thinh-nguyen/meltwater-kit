@@ -8,9 +8,9 @@
 
 import UIKit
 
-class FHAIRouter: FHAIRouterProtocol {
+public class FHAIRouter: FHAIRouterProtocol {
     
-    class func createFHAIModule() -> UIViewController {
+    public class func createFHAIModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "FHAINavigationController")
         if let view = navController.childViewControllers.first as? FHAIDocumentsViewController {
             let presenter: FHAIPresenterProtocol & FHAIInteractorOutputProtocol = FHAIPresenter()
@@ -32,7 +32,16 @@ class FHAIRouter: FHAIRouterProtocol {
     }
     
     static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "MeltwaterKit", bundle: Bundle.main)
+        let podBundle = Bundle(for: FHAIDocumentsViewController.self)
+        
+        if let bundleURL = podBundle.url(forResource: "MeltwaterKit", withExtension: "bundle") {
+        
+            let mwBundle = Bundle(url: bundleURL)!
+            return UIStoryboard(name: "MeltwaterKit", bundle: mwBundle)
+        }
+        else {
+            return UIStoryboard(name: "MeltwaterKit", bundle: Bundle.main)
+        }
     }
     
     
