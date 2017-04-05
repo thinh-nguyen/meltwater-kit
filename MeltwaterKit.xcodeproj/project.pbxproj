@@ -20,6 +20,20 @@
 		B253F95C1E860BE400EF58E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253F95A1E860BE400EF58E7 /* LaunchScreen.storyboard */; };
 		B253F9721E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253F9711E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift */; };
 		B253F97E1E86341D00EF58E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F97D1E86341D00EF58E7 /* Assets.xcassets */; };
+		B25D62341E934D9C00E3B7E6 /* RainbowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62331E934D9C00E3B7E6 /* RainbowView.swift */; };
+		B25D62361E93614600E3B7E6 /* MWStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62351E93614600E3B7E6 /* MWStyles.swift */; };
+		B25D623C1E9373F400E3B7E6 /* CustomProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25D623B1E9373F400E3B7E6 /* CustomProperties.plist */; };
+		B25D623D1E9381B100E3B7E6 /* MWStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62351E93614600E3B7E6 /* MWStyles.swift */; };
+		B25D62451E93861100E3B7E6 /* BlueTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25D62421E93861100E3B7E6 /* BlueTheme.plist */; };
+		B25D62461E93861100E3B7E6 /* dark_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B25D62431E93861100E3B7E6 /* dark_logo.png */; };
+		B25D62471E93861100E3B7E6 /* ThailandTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25D62441E93861100E3B7E6 /* ThailandTheme.plist */; };
+		B25D62491E93868000E3B7E6 /* BlueTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25D62421E93861100E3B7E6 /* BlueTheme.plist */; };
+		B25D624A1E93868400E3B7E6 /* ThailandTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25D62441E93861100E3B7E6 /* ThailandTheme.plist */; };
+		B25D624B1E94344F00E3B7E6 /* dark_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B25D62431E93861100E3B7E6 /* dark_logo.png */; };
+		B25D62551E946C7400E3B7E6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62541E946C7400E3B7E6 /* SearchViewController.swift */; };
+		B25D62561E946C7400E3B7E6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62541E946C7400E3B7E6 /* SearchViewController.swift */; };
+		B25D62581E9480EE00E3B7E6 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62571E9480EE00E3B7E6 /* SearchRouter.swift */; };
+		B25D62591E9480EE00E3B7E6 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D62571E9480EE00E3B7E6 /* SearchRouter.swift */; };
 		B2E1EECF1E8EA4CE0010E32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253F97D1E86341D00EF58E7 /* Assets.xcassets */; };
 		B2E1EED41E90637A0010E32C /* MWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */; };
 		B2E1EEDF1E90A9FC0010E32C /* FHAIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */; };
@@ -95,6 +109,14 @@
 		B253F9711E860BE400EF58E7 /* MeltwaterKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeltwaterKitDemoUITests.swift; sourceTree = "<group>"; };
 		B253F9731E860BE400EF58E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B253F97D1E86341D00EF58E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B25D62331E934D9C00E3B7E6 /* RainbowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RainbowView.swift; path = classes/RainbowView.swift; sourceTree = "<group>"; };
+		B25D62351E93614600E3B7E6 /* MWStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWStyles.swift; path = classes/MWStyles.swift; sourceTree = "<group>"; };
+		B25D623B1E9373F400E3B7E6 /* CustomProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomProperties.plist; sourceTree = "<group>"; };
+		B25D62421E93861100E3B7E6 /* BlueTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BlueTheme.plist; path = ui/BlueTheme.plist; sourceTree = "<group>"; };
+		B25D62431E93861100E3B7E6 /* dark_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dark_logo.png; path = ui/dark_logo.png; sourceTree = "<group>"; };
+		B25D62441E93861100E3B7E6 /* ThailandTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ThailandTheme.plist; path = ui/ThailandTheme.plist; sourceTree = "<group>"; };
+		B25D62541E946C7400E3B7E6 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = classes/SearchViewController.swift; sourceTree = "<group>"; };
+		B25D62571E9480EE00E3B7E6 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRouter.swift; path = classes/SearchRouter.swift; sourceTree = "<group>"; };
 		B2E1EED31E90637A0010E32C /* MWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MWLoginViewController.swift; path = classes/MWLoginViewController.swift; sourceTree = "<group>"; };
 		B2E1EEDE1E90A9FC0010E32C /* FHAIProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FHAIProtocols.swift; path = classes/FHAIProtocols.swift; sourceTree = "<group>"; };
 		B2E1EEF61E90B2D30010E32C /* MeltwaterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeltwaterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,7 +228,11 @@
 		B253F90B1E86090400EF58E7 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				B25D62421E93861100E3B7E6 /* BlueTheme.plist */,
+				B25D62441E93861100E3B7E6 /* ThailandTheme.plist */,
+				B25D62431E93861100E3B7E6 /* dark_logo.png */,
 				B253F90F1E860A9500EF58E7 /* MeltwaterKit.storyboard */,
+				B25D62331E934D9C00E3B7E6 /* RainbowView.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -214,13 +240,9 @@
 		B253F90C1E86090D00EF58E7 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2E1EED51E90639D0010E32C /* View */,
-				B2E1EF081E90D8CB0010E32C /* Interactor */,
-				B2E1EF171E9132660010E32C /* Presenter */,
-				B2E1EF0B1E90DC380010E32C /* Entity */,
-				B2E1EF1A1E9134000010E32C /* Router */,
-				B2E1EED61E9063B50010E32C /* DataManager */,
-				B2E1EEDD1E90A9450010E32C /* Protocol */,
+				B25D624D1E946AFA00E3B7E6 /* Search */,
+				B25D624C1E9469D000E3B7E6 /* DocumentList */,
+				B25D62481E93863000E3B7E6 /* Custom */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -244,6 +266,7 @@
 				B253F95A1E860BE400EF58E7 /* LaunchScreen.storyboard */,
 				B253F95D1E860BE400EF58E7 /* Info.plist */,
 				B253F9551E860BE400EF58E7 /* MeltwaterKitDemo.xcdatamodeld */,
+				B25D623B1E9373F400E3B7E6 /* CustomProperties.plist */,
 			);
 			path = MeltwaterKitDemo;
 			sourceTree = "<group>";
@@ -255,6 +278,85 @@
 				B253F9731E860BE400EF58E7 /* Info.plist */,
 			);
 			path = MeltwaterKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		B25D62481E93863000E3B7E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B25D62351E93614600E3B7E6 /* MWStyles.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		B25D624C1E9469D000E3B7E6 /* DocumentList */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1EEDD1E90A9450010E32C /* Protocol */,
+				B2E1EED51E90639D0010E32C /* View */,
+				B2E1EF081E90D8CB0010E32C /* Interactor */,
+				B2E1EF171E9132660010E32C /* Presenter */,
+				B2E1EF0B1E90DC380010E32C /* Entity */,
+				B2E1EF1A1E9134000010E32C /* Router */,
+				B2E1EED61E9063B50010E32C /* DataManager */,
+			);
+			name = DocumentList;
+			sourceTree = "<group>";
+		};
+		B25D624D1E946AFA00E3B7E6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B25D624E1E946B1C00E3B7E6 /* Protocol */,
+				B25D624F1E946B2700E3B7E6 /* View */,
+				B25D62531E946B5F00E3B7E6 /* Interactor */,
+				B25D62521E946B5000E3B7E6 /* Presenter */,
+				B25D62511E946B4500E3B7E6 /* Entity */,
+				B25D62501E946B3900E3B7E6 /* Router */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		B25D624E1E946B1C00E3B7E6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		B25D624F1E946B2700E3B7E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25D62541E946C7400E3B7E6 /* SearchViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B25D62501E946B3900E3B7E6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B25D62571E9480EE00E3B7E6 /* SearchRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		B25D62511E946B4500E3B7E6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		B25D62521E946B5000E3B7E6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B25D62531E946B5F00E3B7E6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 		B2E1EED51E90639D0010E32C /* View */ = {
@@ -490,7 +592,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25D62451E93861100E3B7E6 /* BlueTheme.plist in Resources */,
+				B25D62461E93861100E3B7E6 /* dark_logo.png in Resources */,
 				B253F97E1E86341D00EF58E7 /* Assets.xcassets in Resources */,
+				B25D62471E93861100E3B7E6 /* ThailandTheme.plist in Resources */,
 				B253F9101E860A9500EF58E7 /* MeltwaterKit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,9 +605,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B253F95C1E860BE400EF58E7 /* LaunchScreen.storyboard in Resources */,
+				B25D624B1E94344F00E3B7E6 /* dark_logo.png in Resources */,
 				B253F9591E860BE400EF58E7 /* Assets.xcassets in Resources */,
 				B2E1EECF1E8EA4CE0010E32C /* Assets.xcassets in Resources */,
 				B253F9541E860BE400EF58E7 /* Main.storyboard in Resources */,
+				B25D623C1E9373F400E3B7E6 /* CustomProperties.plist in Resources */,
+				B25D624A1E93868400E3B7E6 /* ThailandTheme.plist in Resources */,
+				B25D62491E93868000E3B7E6 /* BlueTheme.plist in Resources */,
 				B2E1EF2B1E9162950010E32C /* MeltwaterKit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,15 +761,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E1EF191E9132F00010E32C /* FHAIPresenter.swift in Sources */,
+				B25D62361E93614600E3B7E6 /* MWStyles.swift in Sources */,
 				B2E1EF0A1E90D9090010E32C /* FHAIInteractor.swift in Sources */,
 				B2E1EF0D1E90DC730010E32C /* FHAIModels.swift in Sources */,
 				B2E1EF1E1E9138470010E32C /* FHAIDocumentsViewController.swift in Sources */,
 				B2E1EED41E90637A0010E32C /* MWLoginViewController.swift in Sources */,
 				B2E1EF1C1E9134400010E32C /* FHAIRouter.swift in Sources */,
 				B2E1EF201E913C550010E32C /* FHAIDocumentsTableViewCell.swift in Sources */,
+				B25D62551E946C7400E3B7E6 /* SearchViewController.swift in Sources */,
 				B2E1EF131E90E3EF0010E32C /* FHAIDataManager.swift in Sources */,
+				B25D62581E9480EE00E3B7E6 /* SearchRouter.swift in Sources */,
 				B2E1EF061E90B8CA0010E32C /* RestClient.swift in Sources */,
 				B2E1EEDF1E90A9FC0010E32C /* FHAIProtocols.swift in Sources */,
+				B25D62341E934D9C00E3B7E6 /* RainbowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,9 +781,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25D62561E946C7400E3B7E6 /* SearchViewController.swift in Sources */,
 				B2E1EF211E9160D80010E32C /* FHAIRouter.swift in Sources */,
 				B253F9511E860BE400EF58E7 /* ViewController.swift in Sources */,
 				B2E1EF291E91611B0010E32C /* FHAIPresenter.swift in Sources */,
+				B25D62591E9480EE00E3B7E6 /* SearchRouter.swift in Sources */,
+				B25D623D1E9381B100E3B7E6 /* MWStyles.swift in Sources */,
 				B2E1EF251E91610B0010E32C /* FHAIInteractor.swift in Sources */,
 				B253F94F1E860BE400EF58E7 /* AppDelegate.swift in Sources */,
 				B2E1EF231E9160FE0010E32C /* FHAIDocumentsViewController.swift in Sources */,
@@ -886,6 +1002,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C271F6B223906C559CD59EFF /* Pods-MeltwaterKitDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7RA73QCK;
 				INFOPLIST_FILE = MeltwaterKitDemo/Info.plist;
@@ -900,6 +1017,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36CCB751C8390EF53E364F0D /* Pods-MeltwaterKitDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3T7RA73QCK;
 				INFOPLIST_FILE = MeltwaterKitDemo/Info.plist;

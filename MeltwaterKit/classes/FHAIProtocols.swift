@@ -23,7 +23,7 @@ protocol FHAIDocumentsViewProtocol: class {
 }
 
 protocol FHAIRouterProtocol: class {
-    static func createFHAIModule() -> UIViewController
+    static func createFHAIDocumentViewController() -> UIViewController
     // PRESENTER -> WIREFRAME
     func presentDocumentScreen(from view: FHAIDocumentsViewProtocol, forDocument doc: Document)
 }

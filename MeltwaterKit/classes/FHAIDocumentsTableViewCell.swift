@@ -9,7 +9,11 @@
 import UIKit
 import AlamofireImage
 
-class FHAIDocumentsTableViewCell: UITableViewCell {
+@IBDesignable
+public class FHAIDocumentsTableViewCell: UITableViewCell {
+    
+    @IBInspectable var BgColor: UIColor = UIColor(red: (234/255.0), green: (234/255), blue: (234/255.0), alpha: 1.0)
+    @IBInspectable var Theme: String = "DarkTheme"
     
     @IBOutlet weak var documentImageView: UIImageView!
     
@@ -33,6 +37,26 @@ class FHAIDocumentsTableViewCell: UITableViewCell {
             let placeholderImage = UIImage(named: "placeholder")!
             documentImageView?.af_setImage(withURL: url, placeholderImage: placeholderImage)
         }
+        setStyles()
     }
+    
+   
+//    override func draw(_ rect: CGRect) {
+//        super.draw( rect )
+//    }
 }
 
+extension FHAIDocumentsTableViewCell {
+    
+    fileprivate func setStyles() {
+        if let cl = MWStyles.singleton?.styleMap["TABLE_CELL_BG_RGB"] as? [Int] {
+            self.backgroundColor = MWStyles.singleton?.getColorFromRGB(rgbArray: cl)
+        } else {
+            self.backgroundColor = BgColor
+        }
+        
+        if let cl = MWStyles.singleton?.styleMap["BODY_TEXT_COLOR"] as? [Int] {
+            self.openingText.textColor = MWStyles.singleton?.getColorFromRGB(rgbArray: cl)
+        }
+    }
+}
