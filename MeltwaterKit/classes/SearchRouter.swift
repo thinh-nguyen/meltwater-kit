@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchRouter {
+public class SearchRouter {
     
     public class func createSearchViewController() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "FHAINavigationController")
