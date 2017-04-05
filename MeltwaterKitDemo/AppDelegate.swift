@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.rootViewController = loginModule
 //        window?.makeKeyAndVisible()
+        let vc = SearchRouter.createSearchNavBarController()
+        window = UIWindow(frame: UIScreen.main.bounds)
+                window?.rootViewController = vc
+                window?.makeKeyAndVisible()
         
         UIApplication.shared.statusBarStyle = .lightContent
         

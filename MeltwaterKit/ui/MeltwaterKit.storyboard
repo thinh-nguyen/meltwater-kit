@@ -61,7 +61,7 @@
         <!--Search View Controller-->
         <scene sceneID="2Dn-RX-RLc">
             <objects>
-                <viewController id="WkV-Uq-xau" customClass="SearchViewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="WkV-Uq-xau" customClass="SearchViewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Jn-dU-D8i"/>
                         <viewControllerLayoutGuide type="bottom" id="b3y-R2-Vf4"/>
@@ -128,7 +128,7 @@
                                                     <color key="textColor" red="0.32359470564345055" green="0.34067906353408417" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-dO-Pb6">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-dO-Pb6">
                                                     <rect key="frame" x="8" y="57" width="359" height="79"/>
                                                     <color key="textColor" red="0.21673247732833728" green="0.33268752465469437" blue="0.5450834584236145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>

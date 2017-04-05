@@ -31,26 +31,26 @@ public class FHAIRouter: FHAIRouterProtocol {
         return UIViewController()
     }
     
-//    public class func createFHAIDocumentViewController() -> UIViewController {
-//        let navController = mainStoryboard.instantiateViewController(withIdentifier: "FHAINavigationController")
-//        if let view = navController.childViewControllers.first as? FHAIDocumentsViewController {
-//            let presenter: FHAIPresenterProtocol & FHAIInteractorOutputProtocol = FHAIPresenter()
-//            let interactor: FHAIInteractorInputProtocol & FHAIDataManagerOutputProtocol = FHAIInteractor()
-//            let dataManager: FHAIDataManagerInputProtocol = FHAIDataManager()
-//            let Router: FHAIRouterProtocol = FHAIRouter()
-//            
-//            view.presenter = presenter
-//            presenter.view = view
-//            presenter.router = Router
-//            presenter.interactor = interactor
-//            interactor.presenter = presenter
-//            interactor.dataManager = dataManager
-//            dataManager.documentsHandler = interactor
-//            
-//            return navController
-//        }
-//        return UIViewController()
-//    }
+    public class func createFHAIDocumentNavBarController() -> UIViewController {
+        let navController = mainStoryboard.instantiateViewController(withIdentifier: "FHAINavigationController")
+        if let view = navController.childViewControllers.first as? FHAIDocumentsViewController {
+            let presenter: FHAIPresenterProtocol & FHAIInteractorOutputProtocol = FHAIPresenter()
+            let interactor: FHAIInteractorInputProtocol & FHAIDataManagerOutputProtocol = FHAIInteractor()
+            let dataManager: FHAIDataManagerInputProtocol = FHAIDataManager()
+            let Router: FHAIRouterProtocol = FHAIRouter()
+            
+            view.presenter = presenter
+            presenter.view = view
+            presenter.router = Router
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            interactor.dataManager = dataManager
+            dataManager.documentsHandler = interactor
+            
+            return navController
+        }
+        return UIViewController()
+    }
 
     public class func createLoginModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "MWLoginViewController")
