@@ -14,7 +14,7 @@ import ObjectMapper
 class RestClient {
     
     static let headers: HTTPHeaders = [
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTM3NDIwOSwiaWF0IjoxNDkxMzM4MjA5fQ.X8bCIKhlrHeSwT5gcwk_sG-eyoXbu5t5xmdYyvSvnc8",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTU5MzY4NCwiaWF0IjoxNDkxNTU3Njg0fQ.HmKk1_DQ6v4ItwqjxF4ZkVbVEFz5dNCL7W6q831RdWY",
         "Accept": "application/json"
     ]
     
