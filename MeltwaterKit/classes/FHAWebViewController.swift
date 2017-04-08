@@ -31,12 +31,16 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
     @IBOutlet weak var bottomBar: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
+    @IBOutlet weak var socialEchoView: UIView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var tagButton: UIButton!
     @IBOutlet weak var translateButton: UIButton!
+    @IBOutlet weak var fbCount: UILabel!
+    @IBOutlet weak var twitterCount: UILabel!
+    @IBOutlet weak var linkInCount: UILabel!
     
     @IBOutlet weak var contentBanner: UIView!
     @IBOutlet weak var contentBannerLabel: UILabel!
@@ -68,6 +72,8 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
         }
        webView.frame = self.view.frame
         // TODO: Show some type of wait state UI while navigator is getting the document?
+        
+        
     }
     
     override func viewDidLoad() {
