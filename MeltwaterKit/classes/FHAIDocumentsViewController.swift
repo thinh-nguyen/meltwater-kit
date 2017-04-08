@@ -20,8 +20,14 @@ public class FHAIDocumentsViewController: UIViewController {
         super.viewDidLoad()
         presenter?.viewDidLoad()
         tableView.tableFooterView = UIView()
+        setStyles()
     }
     
+    fileprivate func setStyles() {
+        if let cl = MWStyles.singleton?.styleMap["NAV_COLOR"] as? [Int] {
+            self.navigationController?.navigationBar.barTintColor = MWStyles.singleton?.getColorFromRGB(rgbArray: cl)
+        }
+    }
 }
 
 extension FHAIDocumentsViewController: FHAIDocumentsViewProtocol {

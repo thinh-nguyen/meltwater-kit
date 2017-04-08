@@ -152,7 +152,7 @@
                                             <outlet property="openingText" destination="cnt-dO-Pb6" id="YzF-kf-ugE"/>
                                             <outlet property="sourceName" destination="2mh-Fz-Hpg" id="EF0-NI-aAO"/>
                                             <outlet property="titleLabel" destination="fiv-pJ-4A1" id="X3X-Xp-psY"/>
-                                            <segue destination="QIA-uv-ykM" kind="presentation" identifier="detailViewSegue" trigger="accessoryAction" id="I5x-XM-V66"/>
+                                            <segue destination="QIA-uv-ykM" kind="show" identifier="detailViewSegue" trigger="accessoryAction" id="I5x-XM-V66"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -275,7 +275,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NcF-1Q-iJc">
-                                <rect key="frame" x="8" y="69" width="367" height="598"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -337,7 +337,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="fbCount" destination="AkG-w8-cf8" id="jyJ-en-Scf"/>
+                        <outlet property="linkInCount" destination="FEi-Dc-lhG" id="4UR-zo-wBa"/>
                         <outlet property="myWebView" destination="NcF-1Q-iJc" id="ihU-Nt-fZ8"/>
+                        <outlet property="socialEchoView" destination="ls4-um-jsb" id="ciC-ey-jqk"/>
+                        <outlet property="twitterCount" destination="u8y-3m-ncx" id="Tyi-oU-fYP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ci0-S3-gep" userLabel="First Responder" sceneMemberID="firstResponder"/>
