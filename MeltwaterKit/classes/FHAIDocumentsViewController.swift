@@ -14,6 +14,7 @@ public class FHAIDocumentsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: FHAIPresenterProtocol?
     var documents: [Document] = []
+    var index: Int = 0
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +62,18 @@ extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showDocument(document: documents[indexPath.row])
+        
+        performSegue(withIdentifier: "detailViewSegue", sender:self);
+        index = indexPath.row
+       // presenter?.showDocument(document: documents[indexPath.row])
+        
     }
     
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detailViewSegue") {
+            let vc = segue.destination as! FHAWebviewController;
+            vc.documentUrl = documents[index].url
+        }
+    }
 }
 

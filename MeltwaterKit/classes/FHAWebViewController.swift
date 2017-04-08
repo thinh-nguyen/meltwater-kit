@@ -23,8 +23,10 @@ struct Constants {
     static let cssFont:String = "<style>div {word-break: break-word; font-family: \"HelveticaNeue\", Helvetica; font-size: 28px;}</style>"
 }
 
-class FHAWebviewController: UIViewController, UIScrollViewDelegate, WKNavigationDelegate {
+class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDelegate { //WKNavigationDelegate {
     @IBOutlet weak var webViewContainer: UIView!
+   // @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var myWebView: UIWebView!
     @IBOutlet weak var topBarView: UIView!
     @IBOutlet weak var bottomBar: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -54,7 +56,7 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, WKNavigation
     var shouldInjectJavaScriptScrollToTop = false   // Set to true only when hosted content is shown
     
     // Use this to get the url (instead of directly from the document)
-    var documentUrl: URL?
+    var documentUrl: String?
         
  
     
@@ -64,39 +66,44 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, WKNavigation
         guard let _ = webView else {
             return
         }
-        webView.frame = webViewContainer.bounds
+       webView.frame = self.view.frame
         // TODO: Show some type of wait state UI while navigator is getting the document?
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupWebView(documentUrl)
-    }
-    
-    func setupWebView(_ url:URL?) {
-        let webViewConfiguration = WKWebViewConfiguration()
-        webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypes(rawValue: 0)
-        webView = WKWebView(frame: webViewContainer.bounds, configuration: webViewConfiguration)
-        
-        //        webView = WKWebView(frame: webViewContainer.bounds)
-        webView.scrollView.scrollsToTop = true
-        webView.allowsBackForwardNavigationGestures = true
-        webView.navigationDelegate = self
-        webView.scrollView.delegate = self
-        webViewContainer.addSubview(webView)
-        //Check for the following conditions:
-        // 1) Is the document Hosted & Premium to show the Premium Document Banner
-        // 2) Is the document Hosted but not Premium to show the Hosted Content Banner
-        
-        contentBanner.layer.opacity = 1.0
-        webView.scrollView.contentInset = UIEdgeInsets(top: contentBanner.frame.height, left: 0, bottom: 0, right: 0)
-        
-        let request = URLRequest(url: documentUrl!)
-    
-        webView.load(request)
-            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        //setupWebView(documentUrl)
+        super.viewDidLoad()
+        myWebView.delegate = self
+        if let url = URL(string: documentUrl!) {
+            let request = URLRequest(url: url)
+            myWebView.loadRequest(request)
         }
     }
+    
+//    func setupWebView(_ url:URL?) {
+//        let webViewConfiguration = WKWebViewConfiguration()
+//        webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypes(rawValue: 0)
+//        webView = WKWebView()
+//        self.view = webView
+////        
+////        //        webView = WKWebView(frame: webViewContainer.bounds)
+////        webView.scrollView.scrollsToTop = true
+////        webView.allowsBackForwardNavigationGestures = true
+////        webView.navigationDelegate = self
+////        webView.scrollView.delegate = self
+//        //Check for the following conditions:
+//        // 1) Is the document Hosted & Premium to show the Premium Document Banner
+//        // 2) Is the document Hosted but not Premium to show the Hosted Content Banner
+//        
+////        webView.scrollView.contentInset = UIEdgeInsets(top: contentBanner.frame.height, left: 0, bottom: 0, right: 0)
+//        
+//        let request = URLRequest(url: url!)
+//    
+//        webView.load(request)
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//        }
+//    }
 
     // MARK: - WKNavigationDelegate functions
     
@@ -131,5 +138,6 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, WKNavigation
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        
     }
+}
 
 

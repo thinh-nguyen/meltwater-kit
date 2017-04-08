@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zqb-Lj-4Xv">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zqb-Lj-4Xv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -152,6 +152,7 @@
                                             <outlet property="openingText" destination="cnt-dO-Pb6" id="YzF-kf-ugE"/>
                                             <outlet property="sourceName" destination="2mh-Fz-Hpg" id="EF0-NI-aAO"/>
                                             <outlet property="titleLabel" destination="fiv-pJ-4A1" id="X3X-Xp-psY"/>
+                                            <segue destination="QIA-uv-ykM" kind="presentation" identifier="detailViewSegue" trigger="accessoryAction" id="I5x-XM-V66"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -176,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbk-jG-Lue" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="-163"/>
+            <point key="canvasLocation" x="1486" y="-165"/>
         </scene>
         <!--Document Detail View-->
         <scene sceneID="RPg-Z0-VrY">
@@ -261,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="698" y="212"/>
         </scene>
-        <!--View Controller-->
+        <!--Webview Controller-->
         <scene sceneID="IC0-5C-ZUL">
             <objects>
-                <viewController id="QIA-uv-ykM" sceneMemberID="viewController">
+                <viewController id="QIA-uv-ykM" customClass="FHAWebviewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="33B-5x-kM1"/>
                         <viewControllerLayoutGuide type="bottom" id="dAl-zd-3Lz"/>
@@ -274,7 +275,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NcF-1Q-iJc">
-                                <rect key="frame" x="8" y="0.0" width="367" height="667"/>
+                                <rect key="frame" x="8" y="69" width="367" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -286,10 +287,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myWebView" destination="NcF-1Q-iJc" id="ihU-Nt-fZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ci0-S3-gep" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437.5999999999999" y="463.71814092953525"/>
+            <point key="canvasLocation" x="2336.8000000000002" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
