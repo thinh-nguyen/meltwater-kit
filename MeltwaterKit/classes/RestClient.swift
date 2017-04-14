@@ -11,9 +11,9 @@ import Alamofire
 import AlamofireObjectMapper
 import ObjectMapper
 
-class RestClient {
+public class RestClient {
     
-    static let headers: HTTPHeaders = [
+    public static let headers: HTTPHeaders = [
         "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTY0OTE2NSwiaWF0IjoxNDkxNjEzMTY1fQ.C_LdDIGvf6bza4NtT16l_oOqLvWKIGT64ipq5Mrd2oA",
         "Accept": "application/json"
     ]
@@ -46,11 +46,10 @@ class RestClient {
         }
     }
     
-    internal static func postToUrl(urlString: String, payload: Parameters? ) -> Promise<DocumentsPage> {
-        
+    internal static func postToUrl<T: Mappable>(urlString: String, payload: Parameters? ) -> Promise<T> {
         return Promise { fulfill, reject in
             Alamofire.request(urlString, method: .post, parameters: payload, encoding: JSONEncoding.default, headers: headers)
-                .validate().responseObject { (response: DataResponse<DocumentsPage>) in
+                .validate().responseObject{ (response: DataResponse<T>) in
                     switch response.result {
                     case .success(let obj):
                         fulfill(obj )

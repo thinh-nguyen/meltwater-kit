@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Alamofire
 
 @objc enum translationState: Int {
     case disabled, off, on
@@ -61,8 +62,10 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
     
     // Use this to get the url (instead of directly from the document)
     var documentUrl: String?
-        
- 
+    var body: String?
+    
+    let urlString = "https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/86b17f69-f8d7-4a4c-af76-768e1535b2fb/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4"
+    
     
     override func viewDidAppear(_ animated: Bool) {
         UIApplication.shared.setStatusBarStyle(.default, animated: false)
@@ -84,6 +87,7 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
         if let url = URL(string: documentUrl!) {
             let request = URLRequest(url: url)
             myWebView.loadRequest(request)
+            loadAI1()
         }
     }
     
@@ -144,6 +148,100 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        
     }
+    
+    func loadAI1() {
+        
+        let payload = ["text": documentUrl!]
+        //let urlString = "https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/86b17f69-f8d7-4a4c-af76-768e1535b2fb/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4"
+        Alamofire.request(
+            URL(string: "\(urlString)")!,
+            method: .post,
+            parameters: payload)
+            .validate()
+            .responseJSON { (response) -> Void in
+                guard response.result.isSuccess else {
+                    print("Error while fetching remote rooms: \(response.result.error)")
+                    return
+                }
+                
+                guard let value = response.result.value as? [String: Any],
+                let docId = value["docID"] as? String else {
+                    print("Malformed data received from fetchAllRooms service")
+                    return
+                }
+            self.loadAI2(docId: docId)
+                
+        }
+        
+        Alamofire.request(urlString, method: .post, parameters: payload, encoding: JSONEncoding.default, headers: RestClient.headers)
+        .validate().responseObject { (response: DataResponse<SocialEcho>) in
+            switch response.result {
+            case .success(let obj):
+                DispatchQueue.main.async {
+                    print(obj)
+                    //self.documentsHandler?.onDocumentsRetrieved(documents: page.documents)
+                }
+
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print(error)
+                    //self.documentsHandler?.onDocumentsRetrieved(documents: page.documents)
+                }
+
+            }
+        }
+
+        RestClient.getFromUrl(urlString: "https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/9c03b168-6932-4118-b5b7-304869314d3c/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4/results/0337f4f0-4ca6-402d-99cf-725759dc8e5d", parameters: payload)
+            .then { page -> Void in // Return Void to stop the promise chain
+                DispatchQueue.main.async {
+                    print(page)
+                    //self.documentsHandler?.onDocumentsRetrieved(documents: page.documents)
+                }
+            }
+            .catch { error in
+                print(error)
+                //self.documentsHandler?.onError(errorMsg: error.localizedDescription)
+        }
+    }
+    
+    func loadAI2(docId: String) {
+        let url2:String = "\(urlString)/results/937e3757-43eb-409e-a82d-5ebae695d877/\(docId)"
+        Alamofire.request(
+            URL(string: url2)!,
+            method: .get)
+            .validate()
+            .responseJSON { (response) -> Void in
+                guard response.result.isSuccess else {
+                    print("Error while fetching remote rooms: \(response.result.error)")
+                    return
+                }
+                
+                guard let value = response.result.value as? [String: Any] else {
+                        print("Malformed data received from fetchAllRooms service")
+                        return
+                }
+        
+                let a1 = value["metadata"] as! [String: Any]
+                let a2 = a1["enrichments"] as! [String: Any]
+                let a3 = a2["fhaiSocialEcho"] as! [String: Any]
+                let a4 = a3["facebook"] as! [String: Any]
+                self.fbCount.text = a4["shares"] as? String
+                
+                let b4 = a3["twitter"] as! [String: Any]
+                self.twitterCount.text = b4["shares"] as? String
+                
+                let c4 = a3["twitter"] as! [String: Any]
+                self.linkInCount.text = c4["shares"] as? String
+
+                
+        }
+
+    }
+
 }
 
-
+//curl -X POST -H "Content-Type: application/json" -H "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTY0OTE2NSwiaWF0IjoxNDkxNjEzMTY1fQ.C_LdDIGvf6bza4NtT16l_oOqLvWKIGT64ipq5Mrd2oA" -d '{"text":"http://meltwater.com"}' https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/a660bee9-65e9-41ad-a046-0062844916da/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4
+//
+//curl -X GET -H "Content-Type: application/json" -H "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTY0OTE2NSwiaWF0IjoxNDkxNjEzMTY1fQ.C_LdDIGvf6bza4NtT16l_oOqLvWKIGT64ipq5Mrd2oA" https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/a660bee9-65e9-41ad-a046-0062844916da/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4/results/37e26457-3523-4bf9-8305-95b16dfd7cf4
+//
+//curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTY0OTE2NSwiaWF0IjoxNDkxNjEzMTY1fQ.C_LdDIGvf6bza4NtT16l_oOqLvWKIGT64ipq5Mrd2oA" https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/86b17f69-f8d7-4a4c-af76-768e1535b2fb/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4/results/937e3757-43eb-409e-a82d-5ebae695d877

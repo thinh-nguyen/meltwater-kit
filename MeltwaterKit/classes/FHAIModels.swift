@@ -48,6 +48,22 @@ public struct DocumentsPage {
     
 }
 
+public struct SocialEcho {
+    var facebook: Int = 0
+    var twitter: Int = 0
+    var linkedin: Int = 0
+    
+}
+extension SocialEcho: Mappable {
+   
+    public init?(map: Map) {
+        
+    }
+    
+    mutating public func mapping(map: Map) {
+    }
+}
+
 extension DocumentsPage: Mappable {
     
     public init?(map: Map) {
@@ -121,3 +137,18 @@ extension Document: Mappable {
     }
 }
 
+
+//curl -X GET -H "Content-Type: application/json" -H "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InRoaW5oLm5ndXllbkBtZWx0d2F0ZXIuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmhhaS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMTU3MDgwNjk4NjA1MTcwNTU2NjIiLCJhdWQiOiJQTk9aV3AyNXc1VUNQNjNDd3MwRkprbTFiU090NGRiUCIsImV4cCI6MTQ5MTY0OTE2NSwiaWF0IjoxNDkxNjEzMTY1fQ.C_LdDIGvf6bza4NtT16l_oOqLvWKIGT64ipq5Mrd2oA" https://api-sbox.fairhair.ai/insights/v1/b63054db6ca1240e8484a8d4cbbb44f4/workflows/3177bd92-a426-418e-b3bd-5997b1647549/jobs/api_b63054db6ca1240e8484a8d4cbbb44f4/results/35a87401-c6f1-4f7b-a46e-606faeeca877
+
+//{"metadata":
+//    {"messageID":"787e4d1d-0bc9-48c1-9cbd-216371d6c6b9","docId":"35a87401-c6f1-4f7b-a46e-606faeeca877","source":"api"},
+//    "enrichments":{
+//        "fhaiSocialEcho":{
+//            "facebook":{
+//                "error":"FbErrorDTO{error=Error{message='(#803) Some of the aliases you requested do not exist: demo text', fbTraceId='CVa+ApJfEP/', code='803', type='OAuthException'}}"},
+//            "linkedin":{"error":"LinkedIn API returned code 400, with body [Invalid URL parameter: demo text\r\n]"},
+//            "twitter":{"shares":100},
+//            "url":"demo text"
+//        }
+//    }
+//}

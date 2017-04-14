@@ -79,6 +79,7 @@ extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegat
         if (segue.identifier == "detailViewSegue") {
             let vc = segue.destination as! FHAWebviewController;
             vc.documentUrl = documents[index].url
+            vc.body = documents[index].openingText
         }
     }
 }
