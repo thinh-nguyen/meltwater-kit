@@ -160,7 +160,7 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
             .validate()
             .responseJSON { (response) -> Void in
                 guard response.result.isSuccess else {
-                    print("Error while fetching remote rooms: \(response.result.error)")
+                    print("Error while fetching remote rooms: \(String(describing: response.result.error))")
                     return
                 }
                 
@@ -212,7 +212,7 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
             .validate()
             .responseJSON { (response) -> Void in
                 guard response.result.isSuccess else {
-                    print("Error while fetching remote rooms: \(response.result.error)")
+                    print("Error while fetching remote rooms: \(String(describing: response.result.error))")
                     return
                 }
                 

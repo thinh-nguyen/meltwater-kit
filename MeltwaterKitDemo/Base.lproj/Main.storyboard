@@ -1,31 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pL3-mc-drY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="LtM-86-pZ2">
+        <!--Title-->
+        <scene sceneID="eqT-L9-hZm">
             <objects>
-                <viewController storyboardIdentifier="MWLoginViewController" id="fdO-5q-aF7" customClass="MWLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="magicLinkSuccessViewController" id="bLi-09-pWy" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dY4-Ti-gx3"/>
-                        <viewControllerLayoutGuide type="bottom" id="uG9-q7-vQ3"/>
+                        <viewControllerLayoutGuide type="top" id="fKE-fM-RJ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="4sC-O5-xXs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="N0x-X3-x3F">
+                    <view key="view" contentMode="scaleToFill" id="A2f-Zc-hol">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Job! Please check your email" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejd-h3-83p">
+                                <rect key="frame" x="87" y="221" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aIB-5E-ua3"/>
+                                    <constraint firstAttribute="height" constant="80" id="zNj-iY-aKt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.2167324773" green="0.33268752470000001" blue="0.54508345840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We sent an email to you. It has instruction on getting started." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2on-sz-RMQ">
+                                <rect key="frame" x="67" y="357" width="240" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="TdA-ea-B18"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mailbox" translatesAutoresizingMaskIntoConstraints="NO" id="03w-Sv-ko8">
+                                <rect key="frame" x="179" y="125" width="16" height="16"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sm-vr-cE1">
+                                <rect key="frame" x="0.0" y="-119" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Email sent!" id="P16-jf-NKD"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4sC-O5-xXs" firstAttribute="top" secondItem="2on-sz-RMQ" secondAttribute="bottom" constant="252" id="3aQ-s6-EJz"/>
+                            <constraint firstItem="Ejd-h3-83p" firstAttribute="centerX" secondItem="03w-Sv-ko8" secondAttribute="centerX" id="4FO-Ju-4Nn"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="top" secondItem="Ejd-h3-83p" secondAttribute="bottom" constant="56" id="7Vs-6N-pvb"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="centerX" secondItem="03w-Sv-ko8" secondAttribute="centerX" id="Bgb-U3-9Bl"/>
+                            <constraint firstItem="03w-Sv-ko8" firstAttribute="top" secondItem="7Sm-vr-cE1" secondAttribute="bottom" constant="200" id="Mj2-3h-eUD"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="centerX" secondItem="7Sm-vr-cE1" secondAttribute="centerX" id="btd-dF-QDF"/>
+                            <constraint firstItem="Ejd-h3-83p" firstAttribute="top" secondItem="03w-Sv-ko8" secondAttribute="bottom" constant="80" id="cmg-RT-ifz"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="centerX" secondItem="Ejd-h3-83p" secondAttribute="centerX" id="itH-eH-PwY"/>
+                            <constraint firstItem="7Sm-vr-cE1" firstAttribute="leading" secondItem="A2f-Zc-hol" secondAttribute="leading" id="kfI-1Q-Shd"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="leading" secondItem="A2f-Zc-hol" secondAttribute="leadingMargin" constant="51" id="rk3-rh-EXw"/>
+                            <constraint firstItem="2on-sz-RMQ" firstAttribute="centerX" secondItem="A2f-Zc-hol" secondAttribute="centerX" id="zqj-Gk-Vsv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="LBq-at-7YS"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nt6-FN-rDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAA-Z0-Qa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143.19999999999999" y="-57.121439280359823"/>
+            <point key="canvasLocation" x="1212" y="811.84407796101959"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i33-44-zg3">
+            <objects>
+                <navigationController id="pL3-mc-drY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qy-G4-41K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VLC-hZ-RpO" kind="relationship" relationship="rootViewController" id="F0T-6I-j4O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUT-on-EWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1281" y="778"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="BFr-ap-DFA">
+            <objects>
+                <viewController storyboardIdentifier="magicLinkViewController" id="VLC-hZ-RpO" customClass="LoginViewController" customModule="MeltwaterKitDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xgi-l2-Bo3"/>
+                        <viewControllerLayoutGuide type="bottom" id="t6L-Hb-im9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jfs-KS-bC6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, please enter your work email" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-La-xBr">
+                                <rect key="frame" x="88" y="124" width="200" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="0VU-KJ-NIx"/>
+                                    <constraint firstAttribute="width" constant="200" id="vvb-iG-EYl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.2167324773" green="0.33268752470000001" blue="0.54508345840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZM-pu-9uO">
+                                <rect key="frame" x="46" y="286" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.39607843139999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMagicLinkLogin:" destination="VLC-hZ-RpO" eventType="touchUpInside" id="qhL-e7-Rhw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="thinh.nguyen@meltwater.com" borderStyle="roundedRect" placeholder="you@kaiserpermanente.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tc9-XR-gIZ">
+                                <rect key="frame" x="81" y="226" width="213" height="30"/>
+                                <color key="tintColor" red="0.71764705880000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZM-pu-9uO" firstAttribute="centerX" secondItem="jfs-KS-bC6" secondAttribute="centerX" id="40a-JC-Wyl"/>
+                            <constraint firstItem="9ZM-pu-9uO" firstAttribute="top" secondItem="tc9-XR-gIZ" secondAttribute="bottom" constant="30" id="6Ay-aQ-Lt0"/>
+                            <constraint firstItem="Vy3-La-xBr" firstAttribute="top" secondItem="Xgi-l2-Bo3" secondAttribute="bottom" constant="60" id="IJf-Ak-t0y"/>
+                            <constraint firstItem="tc9-XR-gIZ" firstAttribute="top" secondItem="Vy3-La-xBr" secondAttribute="bottom" constant="30" id="QVv-P2-cdw"/>
+                            <constraint firstItem="9ZM-pu-9uO" firstAttribute="leading" secondItem="jfs-KS-bC6" secondAttribute="leadingMargin" constant="30" id="Zo6-1B-Taf"/>
+                            <constraint firstItem="tc9-XR-gIZ" firstAttribute="centerX" secondItem="9ZM-pu-9uO" secondAttribute="centerX" id="eHH-uH-WsZ"/>
+                            <constraint firstItem="tc9-XR-gIZ" firstAttribute="top" secondItem="Vy3-La-xBr" secondAttribute="bottom" constant="30" id="mLR-9M-xiF"/>
+                            <constraint firstItem="9ZM-pu-9uO" firstAttribute="centerX" secondItem="Vy3-La-xBr" secondAttribute="centerX" id="y44-Zm-hZ9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zCN-6K-tDX"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="tc9-XR-gIZ" id="wDz-yl-JSD"/>
+                        <segue destination="bLi-09-pWy" kind="show" identifier="emailSuccessSegue" id="OWf-YS-RFt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jl-NK-g1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="778"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mailbox" width="16" height="16"/>
+    </resources>
 </document>

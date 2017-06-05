@@ -16,7 +16,7 @@ class FHAIInteractor: FHAIInteractorInputProtocol {
     
     func retrieveDocuments(query: BooleanQuery) {
         do {
-            print("Request: \(query.toJSONString(prettyPrint: true))")
+            print("Request: \(String(describing: query.toJSONString(prettyPrint: true)))")
             try dataManager?.retrieveDocuments(payload: query.toJSON())
         } catch {
             

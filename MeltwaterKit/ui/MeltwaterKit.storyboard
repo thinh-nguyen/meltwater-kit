@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zqb-Lj-4Xv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zqb-Lj-4Xv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,36 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZW-zw-2QI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="-240"/>
-        </scene>
-        <!--Search View Controller-->
-        <scene sceneID="2Dn-RX-RLc">
-            <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="WkV-Uq-xau" customClass="SearchViewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7Jn-dU-D8i"/>
-                        <viewControllerLayoutGuide type="bottom" id="b3y-R2-Vf4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BbC-jm-6aC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS5-WO-gTg">
-                                <rect key="frame" x="163" y="137" width="48" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search"/>
-                                <connections>
-                                    <action selector="doSearch:" destination="WkV-Uq-xau" eventType="touchUpInside" id="0h2-QZ-EdH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="BC2-H1-zrY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="po9-Rz-sLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="571.66416791604206"/>
+            <point key="canvasLocation" x="-186" y="-250"/>
         </scene>
         <!--Documents-->
         <scene sceneID="vRy-ko-xsS">
@@ -348,10 +319,152 @@
             </objects>
             <point key="canvasLocation" x="2336.8000000000002" y="98.50074962518741"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hms-5t-5ir">
+            <objects>
+                <navigationController storyboardIdentifier="loginNavigationController" id="stH-0D-eTP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZUP-kv-S17">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oXx-eI-hd0" kind="relationship" relationship="rootViewController" id="QOE-5e-Y9S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yap-Vr-FR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="1236"/>
+        </scene>
+        <!--Magic Link View Controller-->
+        <scene sceneID="E7H-ap-IqL">
+            <objects>
+                <viewController storyboardIdentifier="magicLinkViewController" id="oXx-eI-hd0" customClass="MagicLinkViewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYk-DU-aDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="VFL-Zo-bRM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZDC-mW-PC7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, please enter your work email" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0L-Ur-Aqa">
+                                <rect key="frame" x="88" y="124" width="200" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Nve-cD-KsW"/>
+                                    <constraint firstAttribute="height" constant="72" id="Z5Y-FX-0tp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.2167324773" green="0.33268752470000001" blue="0.54508345840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLR-ie-B2A">
+                                <rect key="frame" x="46" y="286" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.39607843139999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMagicLinkLogin:" destination="oXx-eI-hd0" eventType="touchUpInside" id="f02-SZ-OdO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="thinh.nguyen@meltwater.com" borderStyle="roundedRect" placeholder="you@kaiserpermanente.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KcB-M9-xfp">
+                                <rect key="frame" x="81" y="226" width="213" height="30"/>
+                                <color key="tintColor" red="0.71764705880000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RLR-ie-B2A" firstAttribute="centerX" secondItem="v0L-Ur-Aqa" secondAttribute="centerX" id="12d-Q9-BFc"/>
+                            <constraint firstItem="KcB-M9-xfp" firstAttribute="top" secondItem="v0L-Ur-Aqa" secondAttribute="bottom" constant="30" id="4e1-8t-C9S"/>
+                            <constraint firstItem="KcB-M9-xfp" firstAttribute="top" secondItem="v0L-Ur-Aqa" secondAttribute="bottom" constant="30" id="Fo4-QU-Zbm"/>
+                            <constraint firstItem="RLR-ie-B2A" firstAttribute="centerX" secondItem="ZDC-mW-PC7" secondAttribute="centerX" id="Jj5-5i-qiX"/>
+                            <constraint firstItem="KcB-M9-xfp" firstAttribute="centerX" secondItem="RLR-ie-B2A" secondAttribute="centerX" id="OSK-NZ-ox0"/>
+                            <constraint firstItem="RLR-ie-B2A" firstAttribute="top" secondItem="KcB-M9-xfp" secondAttribute="bottom" constant="30" id="cYZ-CC-AhF"/>
+                            <constraint firstItem="v0L-Ur-Aqa" firstAttribute="top" secondItem="bYk-DU-aDM" secondAttribute="bottom" constant="60" id="hri-HG-0cZ"/>
+                            <constraint firstItem="RLR-ie-B2A" firstAttribute="leading" secondItem="ZDC-mW-PC7" secondAttribute="leadingMargin" constant="30" id="s1L-cK-pFw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6lw-cM-B5A"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="KcB-M9-xfp" id="FpK-yk-Up9"/>
+                        <segue destination="NQC-Fm-H51" kind="presentation" identifier="emailSuccessSegue" id="MBU-64-8cJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ul-Bu-3nS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="1261"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="tIz-bh-e7z">
+            <objects>
+                <viewController storyboardIdentifier="magicLinkSuccessViewController" id="NQC-Fm-H51" customClass="EmailSentViewController" customModule="MeltwaterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dUp-YT-MsT"/>
+                        <viewControllerLayoutGuide type="bottom" id="2lK-LU-heo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4C1-30-zVH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Job! Please check your email" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVm-AR-M6y">
+                                <rect key="frame" x="87" y="221" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QPZ-ZK-BQd"/>
+                                    <constraint firstAttribute="width" constant="200" id="uOE-oZ-Dy7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.2167324773" green="0.33268752470000001" blue="0.54508345840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We sent an email to you. It has instruction on getting started." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mUd-m6-U3C">
+                                <rect key="frame" x="67" y="357" width="240" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="XlW-YG-rWv"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mailbox" translatesAutoresizingMaskIntoConstraints="NO" id="otv-PL-2Ad">
+                                <rect key="frame" x="179" y="125" width="16" height="16"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-Ld-4h3">
+                                <rect key="frame" x="0.0" y="1" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Email sent!" id="yMP-ET-kfb"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SmJ-Ld-4h3" firstAttribute="leading" secondItem="4C1-30-zVH" secondAttribute="leading" id="10J-Tj-njO"/>
+                            <constraint firstItem="2lK-LU-heo" firstAttribute="top" secondItem="mUd-m6-U3C" secondAttribute="bottom" constant="252" id="8iL-Wl-raz"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="centerX" secondItem="4C1-30-zVH" secondAttribute="centerX" id="9Dd-eQ-2ku"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="leading" secondItem="4C1-30-zVH" secondAttribute="leadingMargin" constant="51" id="F5O-4C-0Km"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="centerX" secondItem="otv-PL-2Ad" secondAttribute="centerX" id="QSP-IQ-0ZD"/>
+                            <constraint firstItem="hVm-AR-M6y" firstAttribute="top" secondItem="otv-PL-2Ad" secondAttribute="bottom" constant="80" id="Rmj-BM-Qqu"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="centerX" secondItem="hVm-AR-M6y" secondAttribute="centerX" id="SMY-n2-6ll"/>
+                            <constraint firstItem="hVm-AR-M6y" firstAttribute="centerX" secondItem="otv-PL-2Ad" secondAttribute="centerX" id="hfA-MH-50w"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="centerX" secondItem="SmJ-Ld-4h3" secondAttribute="centerX" id="nUC-Il-Dlv"/>
+                            <constraint firstItem="otv-PL-2Ad" firstAttribute="top" secondItem="SmJ-Ld-4h3" secondAttribute="bottom" constant="80" id="rWc-OT-71e"/>
+                            <constraint firstItem="mUd-m6-U3C" firstAttribute="top" secondItem="hVm-AR-M6y" secondAttribute="bottom" constant="56" id="ua9-nh-Cyy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="0Tm-lR-MaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cj5-0B-Sde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="1261"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="189" height="113"/>
         <image name="logo icon" width="27" height="12"/>
+        <image name="mailbox" width="16" height="16"/>
         <image name="type facebook" width="20" height="20"/>
         <image name="type inkedin" width="20" height="20"/>
         <image name="type twitter" width="20" height="17"/>

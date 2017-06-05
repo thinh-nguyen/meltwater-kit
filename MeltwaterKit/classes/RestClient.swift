@@ -49,7 +49,7 @@ public class RestClient {
     internal static func postToUrl<T: Mappable>(urlString: String, payload: Parameters? ) -> Promise<T> {
         return Promise { fulfill, reject in
             Alamofire.request(urlString, method: .post, parameters: payload, encoding: JSONEncoding.default, headers: headers)
-                .validate().responseObject{ (response: DataResponse<T>) in
+                .validate().responseObject { (response: DataResponse<T>) in
                     switch response.result {
                     case .success(let obj):
                         fulfill(obj )
@@ -61,3 +61,4 @@ public class RestClient {
     }
     
 }
+
