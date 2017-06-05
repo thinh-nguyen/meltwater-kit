@@ -89,6 +89,7 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
             myWebView.loadRequest(request)
             loadAI1()
         }
+             
     }
     
 //    func setupWebView(_ url:URL?) {
@@ -146,7 +147,6 @@ class FHAWebviewController: UIViewController, UIScrollViewDelegate, UIWebViewDel
     // MARK: - UIScrollViewDelegate
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-       
     }
     
     func loadAI1() {
