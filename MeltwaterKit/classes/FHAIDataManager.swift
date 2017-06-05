@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import PromiseKit
 
-class FHAIDataManager: FHAIDataManagerInputProtocol {
+public class FHAIDataManager: FHAIDataManagerInputProtocol {
     
     var documentsHandler:FHAIDataManagerOutputProtocol?
     
-    public func retrieveDocuments(payload: Parameters)  {
 
+    public func retrieveDocuments(payload: Parameters)  {
         RestClient.postToUrl(urlString: "https://demo.fairhair.ai/api/fhapp/getquiddities", payload: payload)
-            .then { page -> Void in // Return Void to stop the promise chain
+            .then { (page: DocumentsPage) -> Void in // Return Void to stop the promise chain
                 print(page)
                 self.documentsHandler?.onDocumentsRetrieved(documents: page.documents)
             }

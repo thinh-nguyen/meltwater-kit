@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import MeltwaterKit
+import Auth0
+import Lock
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,15 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+       
+        let isLoggedIn = false
             // Override point for customization after application launch.
-        let documents = FHAIRouter.createFHAIModule()
+        let navViewController = isLoggedIn ? FHAIRouter.createFHAIDocumentNavBarController() :
+            createLoginNavigationViewController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = documents
+        window?.rootViewController = navViewController
         window?.makeKeyAndVisible()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
-
+// MARK: Auth0
+    // MARK:
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -94,6 +104,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+
+    func createLoginNavigationViewController() -> UIViewController {
+        let mainStoryboard = UIStoryboard(name: "MeltwaterKit", bundle: Bundle.main)
+        let navController = mainStoryboard.instantiateViewController(withIdentifier: "loginNavigationController")
+        return navController;
+    }
+    
+    // MARK: Auth0
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        var topViewController: LoginProtocol? = nil
+        
+        if let loginDelegate = window?.rootViewController?.presentedViewController as? LoginProtocol {
+            topViewController = loginDelegate
+        }
+        return MWLoginManager.sharedManager.openMagicLink(url: url, sourceApplication: sourceApplication, loginDelegate: topViewController)
+    }
+    
+    
+//    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+//        return MWLoginManager.sharedManager.continueActivity(userActivity: userActivity, restorationHandler: restorationHandler)
+//    }
+    
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+//        let magicLinkViewModel = MagicLinkViewModel()
+//        //return Lock.resumeAuth(url, options: options)
+//        return Auth0.resumeAuth(url, options:options)
+//    }
 
 }
 

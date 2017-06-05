@@ -9,18 +9,25 @@
 import UIKit
 import PKHUD
 
-class FHAIDocumentsViewController: UIViewController {
+public class FHAIDocumentsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var presenter: FHAIPresenterProtocol?
     var documents: [Document] = []
+    var index: Int = 0
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
         tableView.tableFooterView = UIView()
+        setStyles()
     }
     
+    fileprivate func setStyles() {
+        if let cl = MWStyles.singleton?.styleMap["NAV_COLOR"] as? [Int] {
+            self.navigationController?.navigationBar.barTintColor = MWStyles.singleton?.getColorFromRGB(rgbArray: cl)
+        }
+    }
 }
 
 extension FHAIDocumentsViewController: FHAIDocumentsViewProtocol {
@@ -46,7 +53,7 @@ extension FHAIDocumentsViewController: FHAIDocumentsViewProtocol {
 
 extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FHAICell", for: indexPath) as! FHAIDocumentsTableViewCell
         
@@ -56,13 +63,24 @@ extension FHAIDocumentsViewController: UITableViewDataSource, UITableViewDelegat
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return documents.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showDocument(document: documents[indexPath.row])
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "detailViewSegue", sender:self);
+        index = indexPath.row
+       // presenter?.showDocument(document: documents[indexPath.row])
+        
     }
     
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detailViewSegue") {
+            let vc = segue.destination as! FHAWebviewController;
+            vc.documentUrl = documents[index].url
+            vc.body = documents[index].openingText
+        }
+    }
 }
 
